@@ -1,10 +1,10 @@
 # amazon-sqs-spring
-Help developers quickly integrate Amazon Simple Queue Service(SQS) in Spring Boot.
+帮助开发者在Spring Boot应用中快速集成亚马逊SQS消息服务。
 
-# Usage
-Add a dependency using maven:
 
-<!--add dependency in pom.xml-->
+# 使用
+添加Maven依赖:
+
 ```xml
 <dependency>
     <groupId>com.github</groupId>
@@ -13,11 +13,11 @@ Add a dependency using maven:
 </dependency>
 ```
 
-# Sample
+# 示例
 
-## Handler
+## 监听器
 
-configuration properties
+配置
 ```
 aws.access-key-id=your_access_key_id
 aws.secret-access-key=your_secret
@@ -26,7 +26,7 @@ aws.sqs.enable-listening=true
 aws.sqs.endpoint=https://sqs.cn-northwest-1.amazonaws.com.cn
 aws.sqs.account=your_account
 ```
-handler
+监听器
 ```java
 @Component
 @SqsListener("your_queue_name")
@@ -40,13 +40,13 @@ public class TestMsgHandler implements MessageListener {
 }
 ```
 
-## Filter
+## 过滤器
 
-customer filter
+自定义过滤器
 
 ```java
 /**
- * define
+ * 定义
  */
 public class SqsTrackFilter implements Filter {
 
@@ -65,7 +65,7 @@ public class SqsTrackFilter implements Filter {
 }
 
 /**
- * register
+ * 注册
  */
 @Configuration
 public class SqsFilterConfig {
@@ -82,5 +82,5 @@ public class SqsFilterConfig {
 
 ```
 
-# License
+# 开源许可
 Apache License, Version 2.0
