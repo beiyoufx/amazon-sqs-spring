@@ -5,7 +5,7 @@
 
     <groupId>com.github</groupId>
     <artifactId>sqs-spring-boot</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>sqs-spring-boot</name>
 
     <properties>
