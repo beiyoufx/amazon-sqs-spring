@@ -11,7 +11,7 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
+        <spring.boot.version>2.2.11.RELEASE</spring.boot.version>
         <spring.version>5.2.0.RELEASE</spring.version>
         <aws.sqs.client.version>2.5.10</aws.sqs.client.version>
         <fastjson.version>1.2.33</fastjson.version>
